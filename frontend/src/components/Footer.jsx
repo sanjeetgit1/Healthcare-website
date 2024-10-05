@@ -11,7 +11,7 @@ const Footer = () => {
 
         {/* ------------left side----------- */}
         <div>
-            <img onClick={()=>{navigate('/'); scrollTo(0,0)}}  className='mb-5 w-40 cursor-pointer' src={assets.logo} alt="" />
+            <img onClick={()=>{navigate('/'); scrollTo(0,0)}}  className='mb-5 ml-[-2rem] w-[15rem] cursor-pointer' src={assets.logo} alt="" />
             <p className=' w-full md:w-2/3  text-gray-600 leading-6 cursor-pointer'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt rerum iste aperiam voluptate.  Voluptate distinctio eius et aliquid labore laudantium temporibus modi a dignissimos hic?
 
             </p>
