@@ -3,6 +3,8 @@
  import 'dotenv/config'
 import connectDB  from './config/mongodb.js'
 import connectCloudinary from './config/cloudinary.js'
+import adminRouter from './routes/adminRouter.js'
+
 
  // app config
  const app =express()
@@ -17,6 +19,8 @@ import connectCloudinary from './config/cloudinary.js'
 connectCloudinary();
 
  // api endpoints
+app.use('/api/admin', adminRouter)
+
  app.get('/',(req,res)=>{
     res.send('API working Healthcare')
  })
